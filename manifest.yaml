@@ -1,0 +1,7 @@
+version:: 1
+applications:
+- name: MDApp
+  instances: 1
+  memory: 128M
+  buildpacks:
+  - nodejs_buildpack
