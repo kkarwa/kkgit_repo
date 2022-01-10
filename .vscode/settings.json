@@ -1,0 +1,11 @@
+{
+    "git.allowForcePush": true,
+    "git.allowNoVerifyCommit": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.alwaysSignOff": true,
+    "git.autorefresh": false,
+    "git.ignoredRepositories": [
+        ".gitignore"
+    ],
+    "github-enterprise.uri": "https://github.com/kkarwa/kkgit_repo"
+}
