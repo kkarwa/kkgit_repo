@@ -4,7 +4,7 @@
   "description": "kapil first node project",
   "main": "index.js",
   "scripts": {
-    "start":"node .",
+    "start":"ui5 serve --open index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,6 +15,6 @@
   "author": "kapil karwa",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    
   }
 }
