@@ -3,10 +3,15 @@ metadata:
   name: nodejsfirst
 type: application
 
+resources:
+  configuration:
+    paths:
+      webapp: dist
+
 server:
   customMiddleware:
   - name: fiori-tools-appreload
     afterMiddleware: compression
     configuration:
       port: 35729
-      path: webapp
+      path: dist

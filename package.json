@@ -4,7 +4,10 @@
   "description": "kapil first node project",
   "main": "index.js",
   "scripts": {
-    "start":"ui5 serve --open index.html",
+    "build": "ui5 build",
+    "start-old": "ui5 serve --open index.html",
+    "start": "fiori run --open index.html",
+    "start-dist": "fiori run --open index.html --config ui5-dist.yaml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,7 +17,14 @@
   ],
   "author": "kapil karwa",
   "license": "ISC",
-  "dependencies": {
-    
+  "ui5": {
+    "dependencies": [
+      "@sap/ux-ui5-tooling"
+    ]
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.96.0",
+    "@sap/ux-ui5-tooling": "^1.4.4",
+    "@ui5/cli": "^2.14.2"
   }
 }
