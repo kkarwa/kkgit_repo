@@ -10,3 +10,15 @@ server:
     configuration:
       port: 35729
       path: webapp
+  - name: fiori-tools-proxy
+    afterMiddleware: compression
+    configuration:
+      ui5:
+        path:
+        - /resources
+        - /test-resources
+        url: https://sapui5.hana.ondemand.com
+        version: 1.78.0 
+      backend:
+      - path: /sap
+        url: http://alinps2.bcone.com:44300/

@@ -7,6 +7,15 @@
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
+		"dataSources": {
+			"dataSourceName": {
+			  "uri": "/sap/opu/odata/sap/ZODATA_TEST_SRV_01/",
+			  "type": "OData",
+			  "settings": {
+				"odataVersion": "2.0"
+			  }
+			}
+		},
 		"title": "{{appTitle}}",
 		"description": "{{appDesc}}",
 		"tags": {
@@ -95,6 +104,9 @@
 			}]
 		},
 		"models": {
+			"dataSource": {
+				"dataSource": "dataSourceName"
+			  },
 			"": {
 				"type": "sap.ui.model.json.JSONModel",
 				"settings": {},
